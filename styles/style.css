@@ -425,7 +425,7 @@ body {
   margin-bottom: 50px;
 }
 
-.button {
+.portfolio-buttons .button {
   border: none;
   background-color: #F5F4FA;
   color: #212121;
@@ -539,19 +539,101 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
   transform: translate(-50%, -50%) scale(1);
   background-color: #fff;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
-
 
 
 .close-modal {
   background-color: orange;
   display: flex;
   margin-left: auto;
-
 }
 
+.modal-title {
+  text-align: center;
+margin: 0;
+margin-bottom: 12px;
+font-size: 20px;
+line-height: 1.15;
+}
 
 .modal-form {
   display: flex;
   flex-direction: column;
+  margin: 40px;
+
+  /* outline: 1px solid tomato; */
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-label:nth-child(5){
+  margin-bottom: 20px;
+}
+
+.form-check{
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+color: #757575;
+
+}
+
+.form-input::placeholder {
+  margin-top: 10px;
+  margin-left: 10px;
+} 
+
+
+textarea[name="comment"] {
+  height: 120px;
+}
+
+
+
+
+
+.contract {
+  color: var(--primary-color);
+  /* text-decoration: underline; */
+}
+
+.form-text {
+font-weight: 400;
+font-size: 12px;
+line-height: 1.16;
+
+color: #757575;
+}
+
+.form-input {
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+}
+
+.form-label > .form-input {
+  /* background-color: rebeccapurple; */
+  /* margin-bottom: 4px; */
+}
+
+.form-button {
+  margin: 0 auto;
+  /* text-align: center; */
+  /* padding: 0; */
+  /* display: inline-block; */
+}
+
+.form-button .button {
+  padding-left: 52px;
+  padding-right: 52px;
 }
